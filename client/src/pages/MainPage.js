@@ -30,8 +30,8 @@ export default function MainPage() {
             <section className='ww-full lg:w-1/2'>
                 <form>
                     <div className='mb-4'>
-                        <label htmlFor="" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Source Currency</label>
-                        <select className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500" name='' id=''>
+                        <label htmlFor={sourceCurrency} className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Source Currency</label>
+                        <select className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500" name={sourceCurrency} id={sourceCurrency} value={sourceCurrency}>
                             <option value=''>Select source currency</option>
                         </select>
                     </div>
@@ -42,8 +42,8 @@ export default function MainPage() {
             <section className='ww-full lg:w-1/2'>
                 <form>
                 <div className='mb-4'>
-                        <label htmlFor="" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Target Currency</label>
-                        <select className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500" name='' id=''>
+                        <label htmlFor={targetCurrency} className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Target Currency</label>
+                        <select className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500" name={targetCurrency} id={targetCurrency} value={targetCurrency}>
                             <option value=''>Select target currency</option>
                         </select>
                     </div>
@@ -54,10 +54,10 @@ export default function MainPage() {
             <section className='ww-full lg:w-1/2'>
                 <form>
                     <div className='mb-4'>
-                    <label htmlFor="" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Amount in source currency</label>
-                    <input type="number" id="" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500" placeholder="Amount in source currency" required />
+                    <label htmlFor={amountInSourseCurrency} className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Amount in source currency</label>
+                    <input type="number" id={amountInSourseCurrency} name={amountInSourseCurrency} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500" placeholder="Amount in source currency" required />
                     </div>
-                    <button className='bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-4 rounded-md'> {""}Get the target Currency</button>
+                    <button type='button' className='bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-4 rounded-md'> Get the target Currency</button>
                 </form>
             </section>
         </div>
